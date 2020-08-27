@@ -36,9 +36,7 @@ os.system('sudo hwclock -w')
 
 # Write deployment scripts to rc.local
 
-os.system("sudo sed -i '/# Print the IP/isudo python /home/pi/Documents/Snocam_scripts/Snocam.py &\n' /etc/rc.local")
-os.system("sudo sed -i '/# Print the IP/isudo python /home/pi/Documents/Snocam_scripts/Temp+Pres.py &\n' /etc/rc.local")
-os.system("sudo sed -i '/# Print the IP/isudo python /home/pi/Documents/Snocam_scripts/ADXL345_Sampler_100Hz.py &\n' /etc/rc.local")
+os.system("sudo sed -i '/# Print the IP/isudo python /home/pi/Documents/Snocam_scripts/Snocam_DeploymentHandler.py &\n' /etc/rc.local")
 os.system("sudo sed -i '/# Print the IP/i#sudo python /home/pi/Documents/Snocam_scripts/Keep_Me_Alive.py \n' /etc/rc.local")
 
 
